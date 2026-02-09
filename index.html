@@ -2,6 +2,19 @@
 <!DOCTYPE html>
 <html charset="utf-8">
 <link rel="stylesheet" href="style.css">
+   
+<script>
+  const USERNAME = "user";
+  const PASSWORD = "pass";
+
+  const inputUser = prompt("User Name");
+  const inputPass = prompt("Password");
+
+  if (inputUser !== USERNAME || inputPass !== PASSWORD) {
+    alert("認証に失敗しました");
+    location.reload();
+  }
+</script>
 
 <div class="header-wrapper">
    <header class="header">
@@ -168,5 +181,6 @@
 
   </div>
 </section>
+
 
 
